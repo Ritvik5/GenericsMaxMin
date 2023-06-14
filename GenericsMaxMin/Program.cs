@@ -23,22 +23,28 @@
 
             // -- Using Generics Type Parameter 
 
-            GenericsMaximum<int> obj = new GenericsMaximum<int>(23, 50, 5);
+            //GenericsMaximum<int> obj = new GenericsMaximum<int>(23, 50, 5);
 
-            int result = obj.FindMaxUsingGenerics(23, 50, 5);
+            //int result = obj.FindMaxUsingGenerics(23, 50, 5);
 
-            Console.WriteLine(result);
-            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
-            Console.WriteLine("Greatest number among three numbers is :" + result);
-            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+            //Console.WriteLine(result);
+            //Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+            //Console.WriteLine("Greatest number among three numbers is :" + result);
+            //Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
 
-            GenericsMaximum<float> obj1 = new GenericsMaximum<float>(23.25f, 50.25f, 50.3f);
+            //GenericsMaximum<float> obj1 = new GenericsMaximum<float>(23.25f, 50.25f, 50.3f);
 
-            float result2 = obj1.FindMaxUsingGenerics(23.25f, 50.25f, 50.3f);
+            //float result2 = obj1.FindMaxUsingGenerics(23.25f, 50.25f, 50.3f);
 
-            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
-            Console.WriteLine("Greatest number among three numbers is :" + result2);
-            Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+            //Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+            //Console.WriteLine("Greatest number among three numbers is :" + result2);
+            //Console.WriteLine(":::::::::::::::::::::::::::::::::::::::::::::::::::");
+
+            //-- Generics methods with more than 3 parameteres
+
+            GenericsMaximum<string> max = new GenericsMaximum<string>("Apple", "Peach", "Banana","Grapes");
+            string maxString = max.GetMax();
+            Console.WriteLine(maxString);
 
         }
     }
